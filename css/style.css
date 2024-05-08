@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  background-color: #373737;
+}
+
+main {
+  height: 75vh;
+  background-color: #6fbbe5;
+}
+
+footer {
+  height: 15vh;
+  background-color: #5e665a;
+}
+
+#factory{
+    margin-left: 80px;
+    margin-top: 120px;
+}
