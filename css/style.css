@@ -25,3 +25,25 @@ footer {
     margin-left: 80px;
     margin-top: 120px;
 }
+
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#bt-iniciar {
+  border-style: none;
+  background-color: #1182B3;
+  color: white;
+}
+
+#bt-menu {
+  border: 2.5px;
+  background-color: #6FBBE5;
+  border-color: #1182B3;
+  border-style: solid;
+  color: #1182B3;
+  font-weight: bold;
+}
