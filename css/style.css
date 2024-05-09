@@ -9,7 +9,11 @@ header {
 
 main {
   height: 75vh;
-  background-color: #6fbbe5;
+  background-image: url('../img/factory_background.png');
+  background-position: center center;
+  background-color: #6FBBE5;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 footer {
