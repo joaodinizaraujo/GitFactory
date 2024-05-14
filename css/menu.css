@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+article {
+    margin-top: 5vh;
+    row-gap: 1rem;
+    margin-inline: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px #00000025;
+    display: flex;
+    flex-direction: column;
+    background-color: #373737;
+}
+
+.banner {
+    height: 11rem;
+    border-radius: 6px 6px 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo-card,
+.subtitulo-card,
+.texto-card {
+    padding-inline: 10px;
+}
+
+.subtitulo-card {
+    font-size: 1em;
+}
+
+.texto-card {
+    line-height: 24px;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+article a {
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    background: #1182B3;
+    color: white;
+    padding: 5px 10px;
+    transition: .3s;
+
+}
+
+article a:hover {
+    background-color: #4C5AAC;
+}
+
+/*Esse media query vale para todos os folders menos o de Produtividade 1*/
+article {
+    width: 25vw;
+}
+
+main {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 560px) {
+    article {
+        width: 60vw;
+    }
+
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+    article {
+        width: 35vw;
+    }
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subtitulo-card {
+        font-size: 0.9rem;
+    }
+
+    .texto-card {
+        font-size: 0.8rem;
+    }
+}
