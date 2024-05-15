@@ -28,16 +28,17 @@ header {
   margin-left: 20px;
 }
 
-.item-header:hover {
-  text-decoration: underline #eb6c54;
-  cursor: pointer;
-}
-
 #logo {
   margin-left: 30px;
   margin-top: 20px;
 }
 
-.item-header a:link, a:visited, a:hover, a:active{
+.item-header a:link, a:visited, a:active{
   color: white;
+  text-decoration: none;
+}
+
+.item-header a:hover {
+  text-decoration: underline #eb6c54;
+  cursor: pointer;
 }
