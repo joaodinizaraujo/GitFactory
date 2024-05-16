@@ -16,6 +16,7 @@ main {
     grid-auto-flow: row;
     justify-content: space-around;
     justify-items: center;
+    margin-bottom: 2rem;
 }
 
 article {
