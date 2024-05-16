@@ -4,15 +4,31 @@ header {
   grid-template-columns: 1fr auto 1fr;
   height: 10vh;
   background-color: #373737;
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
 }
 
 main {
-  height: 75vh;
-  background-image: url('../img/factory_background.png');
+  height: 100vh;
+  background-image: url("../img/factory_background.png");
   background-position: center center;
-  background-color: #6FBBE5;
+  background-color: #6fbbe5;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
+}
+
+div {
+  margin-right: 10vw;
+}
+
+section {
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  height: 100%;
 }
 
 footer {
@@ -26,24 +42,27 @@ footer {
 }
 
 button {
+  display: block;
   width: 200px;
   height: 40px;
   border-radius: 8px;
   font-size: 16px;
+  margin-block: 10px;
 }
 
 #bt-iniciar {
   border-style: none;
-  background-color: #1182B3;
+
+  background-color: #1182b3;
   color: white;
 }
 
 #bt-menu {
   border: 2.5px;
-  background-color: #6FBBE5;
-  border-color: #1182B3;
+  background-color: #6fbbe5;
+  border-color: #1182b3;
   border-style: solid;
-  color: #1182B3;
+  color: #1182b3;
   font-weight: bold;
 }
 
