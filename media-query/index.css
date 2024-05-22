@@ -1,0 +1,16 @@
+/*
+max: 600
+min: 600
+min: 768
+min: 992
+min: 1200
+*/
+@media only screen and (max-width: 1000px){
+    section {
+       justify-content: center;
+    }   
+    div {
+        margin: 0;
+    }   
+}
+
