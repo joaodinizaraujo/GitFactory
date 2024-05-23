@@ -1,0 +1,30 @@
+main {
+    height: 100vh;
+    background-image: url("../img/fundo-babilonico.png");
+    background-position: center center;
+    background-color: #6fbbe5;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section {
+    display: grid;
+    grid-template-areas: "gato" "bloco";
+}
+#img-gato {
+    background-image: url(../img/Mascote.png);
+    background-position: center center;
+    background-color: transparent;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    grid-area: "gato";
+}
+#mensagem {
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    grid-column-start: 2;
+    grid-row-end: -3;
+    grid-area: "bloco";
+}
