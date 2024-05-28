@@ -8,11 +8,7 @@ main {
 }
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: end;
     height: 100vh;
-
 }
 #img-gato {
     background-image: url(../img/Mascote.png);
@@ -22,11 +18,14 @@ section {
     height: 300px;
     width: 300px;
     background-repeat: no-repeat;
-    grid-row-start: -2;
+    position: absolute;
+    bottom: 0;
+
 }
 #mensagem {
     background-color: gray;
-    height: 200px;
+    height: 18.75rem;
     width: 200px;
-    grid-column-start: 2;
+    justify-self: center;
+    align-self: center;
 }
