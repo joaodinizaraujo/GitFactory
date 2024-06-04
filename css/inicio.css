@@ -23,9 +23,10 @@ section {
 
 }
 #mensagem {
-    background-color: gray;
+    background-color: #373737;
     height: 18.75rem;
-    width: 200px;
+    width: 60vw;
     justify-self: center;
     align-self: center;
+    border-radius: 40px 40px 40px 0;
 }
