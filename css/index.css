@@ -1,4 +1,3 @@
-
 main {
   height: 100vh;
   background-image: url("../img/factory_background.png");
@@ -9,7 +8,7 @@ main {
   z-index: 1;
 }
 
-div {
+#botoes {
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -66,7 +65,8 @@ button>a {
   background-color: #6fbbe5;
   font-weight: bold;
 }
-#bt-menu:hover{
+
+#bt-menu:hover {
   border-color: white;
   transition: .4s;
 }
