@@ -1,0 +1,53 @@
+.dialog-box {
+    width: 98%;
+    height: 100%;
+    max-height: calc(100vh - 168px);
+    padding: 32px;
+    background-color: var(--dark-gray);
+    border-radius: 32px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dialog-box .content {
+    min-height: calc(100% - 52px);
+    max-height: calc(100% - 52px);
+    padding-bottom: 16px;
+    overflow-y: auto;
+}
+
+.dialog-box .content h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--main-white);
+}
+
+.dialog-box .content div {
+    margin-top: 16px;
+}
+
+.dialog-box .content div p {
+    margin-top: 4px;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--light-gray);
+}
+
+.dialog-box .content img, ul {
+    margin: 32px 0;
+}
+
+.dialog-box .content ul li {
+    margin-top: 4px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.dialog-box .content ul li span {
+    margin-right: 6px;
+}
+
+.dialog-box .button-container {
+    padding-top: 8px;
+    height: 52px;
+}

@@ -1,0 +1,76 @@
+body.menu {
+    background-color: var(--light-blue);
+    max-height: none;
+}
+
+.menu main {
+    padding-top: 10vh ;
+    width: 100%;
+}
+
+.menu h2 {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--light-gray);
+}
+
+.menu nav {
+    padding: 8px 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menu article {
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    width: 256px;
+}
+
+.menu article img {
+    width: 100%;
+    height: 136px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu article footer {
+    min-height: 144px;
+    max-height: 144px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu article footer h3 {
+    height: 28px;
+    max-height: 28px;
+    font-size: 1.4em;
+    color: var(--main-white);
+}
+
+.menu article footer p {
+    height: 72px;
+    max-height: 72px;
+    margin-top: 8px;
+    font-size: 0.75em;
+    color: var(--light-gray);
+}
+
+.menu article footer button {
+    margin-top: 8px;
+}
+
+.menu article footer input {
+    display: none;
+}
+
+.menu article footer .command {
+    color: var(--yellow);
+    font-size: 1em;
+    font-weight: 500;
+}

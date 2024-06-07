@@ -1,0 +1,111 @@
+.terminal-box {
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    min-height: 380px;
+    max-height: calc(100vh - 100px);
+    background-color: var(--dark-gray);
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-box header {
+    width: 100%;
+    height: 36px;
+    padding: 4px 0 0 8px;
+    background-color: var(--light-gray);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.terminal-box header div {
+    width: 25%;
+    min-width: 200px;
+    height: 100%;
+    padding: 4px 16px;
+    background-color: var(--dark-gray);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.terminal-box header div img {
+    height: 20px;
+}
+
+.terminal-box header div h4 {
+    font-size: 0.75em;
+    font-weight: 400;
+    color: var(--main-white);
+}
+
+.terminal-box .terminal-content {
+    max-height: 380px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+}
+
+.terminal-box .terminal-content .question-box {
+    width: 100%;
+    padding: 0 8px 4px 8px;
+    background-color: var(--darker-gray);
+    border-radius: 8px;
+}
+
+.terminal-box .terminal-content .question-box .text-container {
+    margin-top: 8px;
+}
+
+.terminal-box .terminal-content .question-box .text-container p {
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--light-gray)
+}
+
+.terminal-box .terminal-content #last-answers {
+    margin-top: 16px;
+}
+
+.terminal-box .terminal-content #last-answers .answer {
+    color: var(--main-white);
+    font-size: 1em;
+}
+
+.terminal-box .terminal-content #last-answers .feedback {
+    margin-top: 4px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.right {
+    color:#1BC400;
+}
+
+.wrong {
+    color: #E21212;
+}
+
+.terminal-box .terminal-content .terminal-input-container .info {
+    margin-bottom: 4px;
+}
+
+.terminal-box .terminal-content .terminal-input-container label, #command {
+    color: var(--main-white);
+    font-size: 1em;
+}
+
+.terminal-box .terminal-content .terminal-input-container #command {
+    background: transparent;
+    border: none;
+    width: 90%;
+}
+
+#command:focus {
+    outline: none
+}

@@ -1,0 +1,44 @@
+.navbar {
+  display: grid;
+  grid-template-areas: "img ul";
+  grid-template-columns: 1fr auto 1fr;
+  height: 10vh;
+  background-color: var(--dark-gray);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.235);
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+
+.navbar #itens-header {
+  display: flex;
+  grid: 20px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .item-header {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navbar #logo {
+  margin-left: 1.2rem;
+  align-self: center;
+  display: flex;
+  height: 70%;
+}
+
+.navbar .item-header a:link,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .item-header a:hover {
+  transition: 0.5s;
+  text-decoration: underline #eb6c54;
+  cursor: pointer;
+}
