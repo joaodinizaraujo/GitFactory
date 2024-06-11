@@ -10,7 +10,6 @@ min: 1200
         justify-content: center;
     }
 
-
     .container-botoes {
         height: 100vh;
         position: fixed;
@@ -31,3 +30,4 @@ min: 1200
     }
 
 }
+
