@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="menu">
+<body class="certificate">
     <header class="navbar">
         <img src="../img/shared/logo.png" alt="Git Factory logo" id="logo" />
         <ul id="itens-header">
@@ -21,7 +21,25 @@
             <li class="item-header"><a href="https://www.git-scm.com/doc" target="_blank">Docs</a></li>
         </ul>
     </header>
-    <main></main>
+    <main>
+        <div class="cat-container">
+            <img id="cat" src="../img/shared/cat.png" alt="git cat">
+        </div>
+        <div class="interactions-container" id="interactions-container">
+            <img src="../img/shared/stars.png" alt="estrelas">
+            <h3>Parabéns!</h3>
+            <p>Você concluiu o treinamento na Git Factory!</p>
+            <input type="text" id="student-name" placeholder="nome no certificado" required>
+            <button class="button primary big" id="make-certificate">coletar certificado</button>
+            <button class="button secondary big"><a href="menu.html">início</a></button>
+        </div>
+    </main>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"
+    ></script>
+    <script src="../certificate.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,51 @@
+body.certificate {
+    background-color: var(--light-blue);
+}
+
+.certificate main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    height: 100%;
+}
+
+.certificate .interactions-container {
+    padding: 0 50% 0 20%;
+    gap: 4px;
+    justify-content: start;
+    padding-top: 88px;
+}
+
+.certificate .interactions-container h3, .certificate .interactions-container p {
+    width: 100%;
+    text-align: center;
+    color: var(--main-white)
+}
+
+.certificate .interactions-container h3 {
+    margin-top: 8px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.certificate .interactions-container p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.certificate input {
+    margin-top: 8px;
+    min-width: 200px;
+    border: var(--main-blue) 2px solid;
+    background: var(--main-white);
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.certificate input:focus {
+    outline: none
+}
