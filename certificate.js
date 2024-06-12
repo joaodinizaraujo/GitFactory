@@ -10,7 +10,7 @@ function pdf(name) {
     let doc = new jsPDF({
         orientation: "landscape"
     });
- 
+
     // Colocando o titulo
     const color = "#74CBFC";
     doc.setFillColor(color);
@@ -24,20 +24,20 @@ function pdf(name) {
     let textWidth = doc.getStringUnitWidth(text) * doc.internal.getFontSize() / doc.internal.scaleFactor;
     let x = (pageWidth - textWidth) / 2;
     doc.text(text, x, 60);
- 
+
     // Colocando as imagens
     let image = new Image();
-    image.src = "img/pdf/logo.png";
+    image.src = "../img/pdf/logo.png";
     x = (pageWidth - 35) / 2;
-    doc.addImage(image, x, 21, 35, 23 );
- 
-    image.src = "img/pdf/parte_cima.png";
+    doc.addImage(image, x, 21, 35, 23 , );
+
+    image.src = "../img/pdf/parte_cima.png";
     x = (pageWidth - 88);
     doc.addImage(image, x, 0, 88, 75);
- 
-    image.src = "img/pdf/parte_baixo.png";
+
+    image.src = "../img/pdf/parte_baixo.png";
     doc.addImage(image, 0, pageHeight - 77.37, 101.73, 77.37);
- 
+
     // escrevendo o texto
     doc.setFontSize(30);
     const text1 = "Certificamos que";
@@ -53,17 +53,17 @@ function pdf(name) {
     textWidth = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
     x = (pageWidth - textWidth) / 2;
     doc.text(text2,x, 120);
- 
+
     doc.setFontSize(14);
     let creators = "Ministrado por: Beatriz Belaparte Favero , Davi Piassi Barros dos Santos, Heitor Kendi Katsuki,";
     textWidth = doc.getStringUnitWidth(creators) * doc.internal.getFontSize() / doc.internal.scaleFactor;
     x = (pageWidth - textWidth) / 2;
     doc.text(creators,x, 150);
- 
+
     creators = " João Victor Diniz Araújo, Pedro Moises Araújo de Gusmão";
     textWidth = doc.getStringUnitWidth(creators) * doc.internal.getFontSize() / doc.internal.scaleFactor;
     x = (pageWidth - textWidth) / 2;
     doc.text(creators,x, 155);
- 
+
     doc.save("certificado.pdf");
 }
