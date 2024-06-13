@@ -31,13 +31,6 @@ function pdf(name) {
     x = (pageWidth - 35) / 2;
     doc.addImage(image, x, 21, 35, 23);
 
-    image.src = "../img/pdf/parte_cima.png";
-    x = (pageWidth - 88);
-    doc.addImage(image, x, 0, 88, 75);
-
-    image.src = "../img/pdf/parte_baixo.png";
-    doc.addImage(image, 0, pageHeight - 77.37, 101.73, 77.37);
-
     // escrevendo o texto
     doc.setFontSize(30);
     const text1 = "Certificamos que";
