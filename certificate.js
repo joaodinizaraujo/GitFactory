@@ -29,7 +29,7 @@ function pdf(name) {
     let image = new Image();
     image.src = "../img/pdf/logo.png";
     x = (pageWidth - 35) / 2;
-    doc.addImage(image, x, 21, 35, 23 , );
+    doc.addImage(image, x, 21, 35, 23);
 
     image.src = "../img/pdf/parte_cima.png";
     x = (pageWidth - 88);
@@ -41,7 +41,7 @@ function pdf(name) {
     // escrevendo o texto
     doc.setFontSize(30);
     const text1 = "Certificamos que";
-    const text2 = "realizou todas as etapas de Git Facotory";
+    const text2 = "realizou todas as etapas de Git Factory";
     textWidth = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
     x = (pageWidth - textWidth) / 2;
     doc.text(text1,x, 90);
