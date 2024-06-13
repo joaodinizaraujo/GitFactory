@@ -192,8 +192,6 @@ function renderTerminal(data) {
     const correctAnswers = [];
     const apiAnswers = data.resposta;
 
-    console.log(apiAnswers)
-
     const commandInput = document.getElementById('command');
     const lastAnswers = document.getElementById('last-answers');
     document.addEventListener('keyup', handleSubmit)
@@ -344,6 +342,7 @@ function renderFinalScreen(data) {
                         document.removeEventListener('keyup', handleKeyUp);
                         document.removeEventListener('keydown', handleKeyDown);
                     } else {
+                        console.log("bora BILL....");
                         window.location.href = 'certificate.html';
                     }
                 }
