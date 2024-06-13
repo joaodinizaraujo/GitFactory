@@ -238,7 +238,7 @@ function renderTerminal(data) {
     }
 
     function checkAnswer(value) {
-        const rightAnswer = apiAnswers[correctAnswers.length];
+        const rightAnswer = apiAnswers[correctAnswers.length].trim().toLowerCase();
         if(value === rightAnswer) {
             correctAnswers.push(value);
             return true;
