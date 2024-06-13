@@ -34,7 +34,7 @@ function pdf(name) {
     let image2 = new Image();
     image2.src = "../img/pdf/parte_cima.png";
     x = (pageWidth - 88);
-    doc.addImage(image2, x, 0, 88, 75);
+    doc.addImage(image2, "png", x, 0, 88, 75);
 
     let image3 = new Image();
     image3.src = "../img/pdf/parte_baixo.png";
