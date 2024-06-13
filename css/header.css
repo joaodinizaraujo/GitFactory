@@ -17,14 +17,19 @@ header {
   position: absolute;
   width: 100vw;
   z-index: 2;
+  transition: height .1s ease-in-out;
+}
+
+header.expanded {
+  height: 16vh;
 }
 
 #itens-header {
   display: flex;
-  grid: 20px;
   margin: 0;
   justify-content: center;
   align-items: center;
+  transition: display 10s ease-in-out;
 }
 
 .item-header {
@@ -38,7 +43,9 @@ header {
   display: flex;
 }
 
-.item-header a:link, a:visited, a:active{
+.item-header a:link,
+a:visited,
+a:active {
   color: white;
   text-decoration: none;
 }
@@ -46,4 +53,14 @@ header {
 .item-header a:hover {
   text-decoration: underline #eb6c54;
   cursor: pointer;
+}
+
+#menu-icon {
+  justify-self: end;
+  color: white;
+  font-size: 3rem;
+  display: none;
+  grid-column-start: 3;
+  padding-right: 1rem;
+  align-self: center;
 }

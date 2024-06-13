@@ -1,18 +1,19 @@
-@import url(header.css);
 body {
     background-color: #6FBBE5;
 }
+
 #fases {
-    margin-top: 2rem;
     color: white;
     text-align: center;
 }
+
 main {
-    display: grid;
-    grid-auto-flow: row;
     justify-content: space-around;
     justify-items: center;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 2rem;
 }
 
 article {
@@ -58,7 +59,6 @@ article a {
     background-color: #1182B3;
     color: white;
     padding: 5px 10px;
-    width: 5vw;
     margin: 10px;
     text-align: center;
     transition: .3s;
@@ -70,10 +70,6 @@ article a:hover {
 
 article {
     width: 22vw;
-}
-
-main {
-    grid-template-columns: repeat(4, 1fr);
 }
 
 @media screen and (max-width: 560px) {
