@@ -397,7 +397,8 @@ function startLevel(levelName) {
 
 function setScreen(number) {
     if(number === levelData.length) {
-        startLevel(levels[currentLevel+1]['endpoint'])
+        currentLevel ++;
+        startLevel(levels[currentLevel]['endpoint'])
     } else {
         currentScreen = number;
         screenData = levelData[currentScreen];
