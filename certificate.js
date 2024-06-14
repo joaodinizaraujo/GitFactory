@@ -37,8 +37,8 @@ function pdf(name) {
     doc.addImage(image2, "png", x, 0, 88, 75);
 
     let image3 = new Image();
-    image3.src = "../img/pdf/parte_baixo.png";
-    doc.addImage(image3, 0, "png", pageHeight - 77.37, 101.73, 77.37);
+    image3.src = "../img/pdf/mascote.png";
+    doc.addImage(image3, "png", 5, 162, 30.9 ,43.66);
 
     // escrevendo o texto
     doc.setFontSize(30);
