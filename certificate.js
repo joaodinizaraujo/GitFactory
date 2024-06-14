@@ -29,7 +29,7 @@ function pdf(name) {
     let image = new Image();
     image.src = "../img/pdf/logo.png";
     x = (pageWidth - 35) / 2;
-    doc.addImage(image, x, 21, 35, 23);
+    doc.addImage(image, "png", x, 21, 35, 23);
 
     let image2 = new Image();
     image2.src = "../img/pdf/parte_cima.png";
