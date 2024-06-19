@@ -5,4 +5,4 @@ Learn Git and GitHub easily!
 [@PedroMoisesGusmao](https://github.com/PedroMoisesGusmao), [@joaodinizaraujo](https://github.com/joaodinizaraujo), [@BeaBelTech](https://github.com/BeaBelTech), [@Heitorkatsuki](https://github.com/Heitorkatsuki), [@Davipiassi](https://github.com/Davipiassi)
 
 ## Our content API
-We made an API to get the content from our MongoDB database, [Access the source code here](https://github.com/PedroMoisesGusmao)
+We made an API to get the content from our MongoDB database, [access the source code here](https://github.com/PedroMoisesGusmao/GitFactory-Telas)
