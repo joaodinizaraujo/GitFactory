@@ -8,4 +8,4 @@ Learn Git and GitHub easily!
 We made an API to get the content from our MongoDB database, [access the source code here](https://github.com/PedroMoisesGusmao/GitFactory-Telas).
 
 ## Want to contribute?
-If you liked the project, help us to improve and teach even better! Contact someone of the developers to get more information.
+If you liked the project, help us to improve and teach even better! Contact one of the developers to get more information.
